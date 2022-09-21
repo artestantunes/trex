@@ -81,6 +81,7 @@ function draw(){
   if((keyDown("space") || touches.length > 0) && trex.y >= height - 90){
   jumpSound.play();
   trex.velocityY = -10;
+    touches = [];
   }
   trex.velocityY = trex.velocityY + 0.5;
   if(solo.x<width/2){
